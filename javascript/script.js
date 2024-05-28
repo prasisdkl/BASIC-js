@@ -104,3 +104,103 @@ do{
     a++
 }while(a<=100);
 */
+
+
+/*
+//array
+const days =['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'];
+
+/*
+days.forEach(function(abc){document.write(" "+abc)})
+    days.shift();
+
+    document.write("<br>");
+    days.forEach(function(abc){document.write(" "+abc)})
+*/
+
+    /*
+document.write(days[0]);
+console.log(days);
+*/
+
+/*
+days.forEach(function(abc){document.write(abc+" ")})
+    days.unshift("prasis");
+
+    document.write("<br>");
+    days.forEach(function(abc){document.write(abc+" ")})
+*/
+ /*
+days.forEach(function(abc){document.write(" "+abc)})
+    days.pop();
+
+    document.write("<br>");
+    days.forEach(function(abc){document.write(" "+abc)})
+*/
+
+/*
+    days.forEach(function(abc){document.write(" "+abc)})
+    days.push("sunday");
+
+    document.write("<br>");
+    days.forEach(function(abc){document.write(" "+abc)})
+*/
+
+
+/*  
+days.forEach(function(abc){document.write(" "+abc)})
+    days.splice(1,1,"prasis");
+
+    document.write("<br>");
+    days.forEach(function(abc){document.write(" "+abc)})
+    */
+
+
+    //function 
+    function printname(){
+        document.getElementById('info').innerHTML = "prasis";
+    }
+
+
+
+    function calculate (){
+        let principal = document.getElementById('p').value;
+        let time = document.getElementById('t').value;
+        let rate = document.getElementById('r').value;
+
+        let si = principal * time * rate / 100;
+
+        document.getElementById('info2').innerHTML = si;
+    }
+
+
+    let person = {
+        fname: "prasis",
+        lname: "dhakal",
+        location: "chitwan",
+        age: 18,
+        fullname: function(){
+          return this.fname+ " "+this.lname;
+        }
+
+    };
+document.write(person.fullname());
+
+/*
+let a = Math.PI;
+document.write(a);
+
+
+let value = 2.6;
+let b = Math.round(value);
+document.write(b);
+
+
+
+let c= Math.sqrt(25);
+document.write(c);
+
+*/
+
+let x = Math.random()*6; 
+document.write(x.toFixed(0));
